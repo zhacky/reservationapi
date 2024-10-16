@@ -1,0 +1,37 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: zhack
+      changes:
+        - createTable:
+            tableName: reservations
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+              - column:
+                  name: phone_number
+                  type: VARCHAR(15)
+              - column:
+                  name: email
+                  type: VARCHAR(255)
+              - column:
+                  name: reservation_date
+                  type: DATE
+              - column:
+                  name: reservation_time
+                  type: TIME
+              - column:
+                  name: number_of_guests
+                  type: INT
+        - addForeignKeyConstraint:
+              baseTableName: contact_methods
+              baseColumnNames: reservation_id
+              constraintName: fk_reservation_contact_method
+              referencedTableName: reservations
+              referencedColumnNames: id

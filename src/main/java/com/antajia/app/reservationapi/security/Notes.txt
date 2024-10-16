@@ -1,0 +1,7 @@
+To add security, we need to:
+1. add dependencies: spring-boot-starter-security and jjwt
+2. Create JWT Filter class and SecurityConfig
+3. Create Model, Dto and controller for Login and User (also generate the tables required)
+3. Secure endpoints with Web Security and allow login endpoints
+4. Implement usage of UserDetailsService and SecurityConfig
+5. Test the encryption (ex. BCryptPasswordEncoder)
