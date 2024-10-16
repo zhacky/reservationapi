@@ -7,14 +7,10 @@ This project is a RESTful Reservation API that allows users to create, manage, a
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [API Endpoints](#api-endpoints)
-    - [Create a New Reservation](#create-a-new-reservation)
-    - [Cancel a Reservation](#cancel-a-reservation)
-    - [View My Reservations](#view-my-reservations)
-    - [Update My Reservation](#update-my-reservation)
-- [Stretch Goals](#stretch-goals)
-- [Database](#database)
-- [Testing](#testing)
-- [License](#license)
+    - [Create a New Reservation]
+    - [Cancel a Reservation]
+    - [View Reservation]
+    - [Update Reservation]
 
 ## Features
 
@@ -22,7 +18,7 @@ This project is a RESTful Reservation API that allows users to create, manage, a
 - **Cancel a reservation**: Users can cancel their reservations using a reservation ID.
 - **View reservations**: Users can view a list of all upcoming reservations.
 - **Update a reservation**: Users can modify reservation details like the time and number of guests.
-- **Notification system**: Users are notified about their reservation status (confirmation, cancellation, and reminders).
+- **Notification system**: Users are notified about their reservation status (confirmation and update).
 
 ## Technologies Used
 
@@ -45,4 +41,4 @@ This project is a RESTful Reservation API that allows users to create, manage, a
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/zhacky/reservation-api.git
+   git clone https://github.com/zhacky/reservationapi.git
