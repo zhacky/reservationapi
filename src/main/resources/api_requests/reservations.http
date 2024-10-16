@@ -15,9 +15,11 @@ GET http://localhost:8080/api/reservations/{{id}}
 @phone_number = "+639334466890"
 @email = "zaky@coco.melon"
 @reservation_date = "2024-11-17"
-@reservation_time = "9:30"
+@reservation_time = "09:30:00"
 @number_of_guests = 5
-@preferred_contact_method = [{"name": "SMS"}]
+@contact_methods = ["SMS","Phone"]
+
+
 
 POST http://localhost:8080/api/reservations
 Content-Type: application/json
@@ -29,6 +31,6 @@ Content-Type: application/json
   "reservation_date": {{reservation_date}},
   "reservation_time": {{reservation_time}},
   "number_of_guests": {{number_of_guests}},
-  "preferred_contact_method": {{preferred_contact_method}}
+  "contact_methods": {{contact_methods}}
 }
 

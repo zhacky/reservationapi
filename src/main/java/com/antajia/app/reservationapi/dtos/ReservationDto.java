@@ -1,5 +1,6 @@
 package com.antajia.app.reservationapi.dtos;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -18,13 +19,22 @@ import java.util.Set;
  */
 @Data
 public class ReservationDto {
+
+    @JsonProperty("id")
     private Long id;
+    @JsonProperty("name")
     private String name;
+    @JsonProperty("phone_number")
     private String phoneNumber;
+    @JsonProperty("email")
     private String email;
+    @JsonProperty("reservation_date")
     private LocalDate reservationDate;
+    @JsonProperty("reservation_time")
     private LocalTime reservationTime;
+    @JsonProperty("number_of_guests")
     private Integer numberOfGuests;
+    @JsonProperty("contact_methods")
     private Set<String> contactMethods;
 
     public ReservationDto(String name, String phoneNumber, String email, LocalDate reservationDate, LocalTime reservationTime, Integer numberOfGuests, Set<String> contactMethods) {

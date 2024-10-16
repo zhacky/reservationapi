@@ -24,6 +24,9 @@ target/
 /nbbuild/
 /dist/
 /nbdist/
+.codebuddy/
+/.codebuddy/db/lucene/version.txt
+/.codebuddy/db/lucene/write.lock
 /.nb-gradle/
 build/
 !**/src/main/**/build/
