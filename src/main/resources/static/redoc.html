@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ReDoc</title>
+    <!-- ReDoc script from the CDN -->
+    <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"></script>
+</head>
+<body>
+<redoc spec-url="/v3/api-docs"></redoc>
+<script>
+    Redoc.init('/v3/api-docs', {}, document.querySelector('redoc'));
+</script>
+</body>
+</html>

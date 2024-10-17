@@ -24,8 +24,6 @@ public class NotificationService implements BaseNotificationService {
                             sendEmailNotification(reservation, message);
                         case "SMS":
                             sendSmsNotification(reservation, message);
-                        case "Phone":
-                            sendPhoneNotification(reservation, message);
                         default:
                             logger.warn("Unknown contact method for reservation: {}", reservation.getId());
                     }
@@ -42,13 +40,6 @@ public class NotificationService implements BaseNotificationService {
     public void sendSmsNotification(Reservation reservation, String message) {
         // Implement SMS sending logic here
         logger.info("Sending SMS notification to: {}", reservation.getPhoneNumber());
-        logNotification(reservation, message, true);
-    }
-
-    @Override
-    public void sendPhoneNotification(Reservation reservation, String message) {
-        // Implement phone call notification logic here
-        logger.info("Sending phone notification to: {}", reservation.getPhoneNumber());
         logNotification(reservation, message, true);
     }
 

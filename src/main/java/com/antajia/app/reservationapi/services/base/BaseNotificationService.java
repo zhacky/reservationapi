@@ -13,8 +13,6 @@ public interface BaseNotificationService {
 
     void sendSmsNotification(Reservation reservation, String message);
 
-    void sendPhoneNotification(Reservation reservation, String message);
-
     ContactMethod getPreferredContactMethod(Reservation reservation);
 
     String formatNotificationMessage(Reservation reservation);
